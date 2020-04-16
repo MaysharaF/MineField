@@ -6,6 +6,9 @@ export default props => {
   const {mined, opened, nearMines} = props;
 
   const styleField = [styles.field];
+  if (opened) {
+    styleField.push(styles.opened);
+  }
   if (styleField.length === 1) {
     styleField.push(styles.regular);
   }
