@@ -26,4 +26,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  line: {
+    position: 'absolute',
+    height: 3,
+    width: 20,
+    borderRadius: 3,
+    backgroundColor: '#000',
+  },
 });
