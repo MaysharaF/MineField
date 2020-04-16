@@ -69,4 +69,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: params.fontSize,
   },
+  exploded: {
+    backgroundColor: 'red',
+    borderColor: 'red',
+  },
 });
