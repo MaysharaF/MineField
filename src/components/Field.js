@@ -60,4 +60,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  label: {
+    fontWeight: 'bold',
+    fontSize: params.fontSize,
+  },
 });
