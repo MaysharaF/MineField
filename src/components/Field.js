@@ -54,4 +54,10 @@ const styles = StyleSheet.create({
     borderRightColor: '#333',
     borderBottomColor: '#333',
   },
+  opened: {
+    backgroundColor: '#999',
+    borderColor: '#777',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
