@@ -18,6 +18,9 @@ export default class App extends Component {
         <Field opened nearMines={2} />
         <Field opened nearMines={3} />
         <Field opened nearMines={6} />
+        <Field mined />
+        <Field mined opened />
+        <Field mined opened exploded />
       </View>
     );
   }
@@ -31,7 +34,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   welcome: {
-    fontSize: 30,
+    fontSize: 20,
     textAlign: 'center',
   },
 });
