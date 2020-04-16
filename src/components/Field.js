@@ -29,7 +29,15 @@ export default props => {
     }
   }
 
-  return <View style={styleField} />;
+  return (
+    <View style={styleField}>
+      {!mined && opened && nearMines > 0 ? (
+        <Text style={[styles.label, {color: color}]}>{nearMines}</Text>
+      ) : (
+        false
+      )}
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
