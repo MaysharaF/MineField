@@ -40,6 +40,7 @@ export default props => {
       ) : (
         false
       )}
+      {mined && opened ? <Mine /> : false}
     </View>
   );
 };
