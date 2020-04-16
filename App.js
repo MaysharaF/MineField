@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Plataform, StyleSheet, Text, View} from 'react-native';
 import params from './src/params';
-
+//test
 export default class App extends Component {
   render() {
     return (
