@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StylesSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import params from '../params';
 
 export default props => {
@@ -11,7 +11,7 @@ export default props => {
   return <View style={styleField} />;
 };
 
-const styles = StylesSheet.create({
+const styles = StyleSheet.create({
   field: {
     height: params.blockSize,
     width: params.blockSize,
