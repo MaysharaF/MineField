@@ -38,4 +38,12 @@ const styles = StyleSheet.create({
     marginLeft: 7,
     marginTop: 10,
   },
+  base2: {
+    position: 'absolute',
+    height: 2,
+    width: 10,
+    backgroundColor: '#222',
+    marginLeft: 5,
+    marginTop: 12,
+  },
 });
