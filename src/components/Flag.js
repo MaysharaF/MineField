@@ -30,4 +30,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#F22',
     marginLeft: 3,
   },
+  base1: {
+    position: 'absolute',
+    height: 2,
+    width: 6,
+    backgroundColor: '#222',
+    marginLeft: 7,
+    marginTop: 10,
+  },
 });
