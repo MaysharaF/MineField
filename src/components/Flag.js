@@ -4,7 +4,9 @@ import {View, StyleSheet} from 'react-native';
 export default props => {
   return (
     <View style={styles.container}>
-      <View style={styles.flagpole} />
+      <View
+        style={[styles.flagpole, props.bigger ? styles.flagpoleBigger : null]}
+      />
       <View style={styles.flag} />
       <View style={styles.base1} />
       <View style={styles.base2} />
