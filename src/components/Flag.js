@@ -56,4 +56,10 @@ const styles = StyleSheet.create({
     width: 14,
     marginLeft: 3,
   },
+  base1Bigger: {
+    height: 4,
+    width: 12,
+    marginTop: 20,
+    marginLeft: 12,
+  },
 });
