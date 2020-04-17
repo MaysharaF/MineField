@@ -6,6 +6,12 @@ import MineField from './src/components/MineField';
 import {createMinedBoard} from './src/functions';
 
 export default class App extends Component {
+  minesAmount = () => {
+    const cols = params.getColumnsAmount();
+    const rows = params.getRowsAmount();
+    return Math.ceil(cols * rows * params.difficultLevel);
+  };
+
   render() {
     return (
       <View style={styles.container}>
