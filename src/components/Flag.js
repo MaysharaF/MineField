@@ -23,4 +23,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#222',
     marginLeft: 9,
   },
+  flag: {
+    position: 'absolute',
+    height: 5,
+    width: 6,
+    backgroundColor: '#F22',
+    marginLeft: 3,
+  },
 });
