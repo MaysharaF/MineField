@@ -3,7 +3,7 @@ import {View, StyleSheet} from 'react-native';
 
 export default props => {
   return (
-    <View styles={styles.container}>
+    <View style={styles.container}>
       <View style={styles.coreMine} />
       <View style={styles.line} />
       <View style={[styles.line, {transform: [{rotate: '45deg'}]}]} />
