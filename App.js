@@ -12,6 +12,14 @@ export default class App extends Component {
     return Math.ceil(cols * rows * params.difficultLevel);
   };
 
+  createState = () => {
+    const cols = params.getColumnsAmount();
+    const rows = params.getRowsAmount();
+    return {
+      board: createMinedBoard(rows, cols, this.minesAmount()),
+    };
+  };
+
   render() {
     return (
       <View style={styles.container}>
