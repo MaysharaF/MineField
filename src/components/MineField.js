@@ -9,7 +9,7 @@ export default props => {
     });
     return <View key={r}>{columns}</View>;
   });
-  return <View style={StyleSheet.container}>{rows}</View>;
+  return <View style={styles.container}>{rows}</View>;
 };
 
 const styles = StyleSheet.create({
