@@ -62,4 +62,10 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginLeft: 12,
   },
+  base2Bigger: {
+    height: 4,
+    width: 20,
+    marginLeft: 8,
+    marginTop: 24,
+  },
 });
