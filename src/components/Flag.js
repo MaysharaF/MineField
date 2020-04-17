@@ -7,7 +7,7 @@ export default props => {
       <View
         style={[styles.flagpole, props.bigger ? styles.flagpoleBigger : null]}
       />
-      <View style={styles.flag} />
+      <View style={[styles.flag, props.bigger ? styles.flagBigger : null]} />
       <View style={styles.base1} />
       <View style={styles.base2} />
     </View>
