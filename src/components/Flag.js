@@ -46,4 +46,9 @@ const styles = StyleSheet.create({
     marginLeft: 5,
     marginTop: 12,
   },
+  flagpoleBigger: {
+    height: 10,
+    width: 4,
+    marginLeft: 16,
+  },
 });
