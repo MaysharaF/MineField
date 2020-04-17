@@ -6,6 +6,11 @@ import MineField from './src/components/MineField';
 import {createMinedBoard} from './src/functions';
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = this.createState();
+  }
+
   minesAmount = () => {
     const cols = params.getColumnsAmount();
     const rows = params.getRowsAmount();
