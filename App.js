@@ -7,7 +7,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text styles={styles.welcome}>Iniciando o Mines!</Text>
+        <Text style={styles.welcome}>Iniciando o Mines!</Text>
         <Text style={styles.instructions}>
           Tamanho da grade:
           {params.getRowsAmount()}x{params.getColumnsAmount()}
