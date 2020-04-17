@@ -51,4 +51,9 @@ const styles = StyleSheet.create({
     width: 4,
     marginLeft: 16,
   },
+  flagBigger: {
+    height: 10,
+    width: 14,
+    marginLeft: 3,
+  },
 });
