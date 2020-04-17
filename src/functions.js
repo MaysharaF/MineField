@@ -17,3 +17,19 @@ const createBoard = (rows, columns) => {
         });
     });
 };
+
+const spreadMines = (board, MinesAmount) => {
+  const rows = board.length;
+  const columns = board[0].length;
+  let minesPlanted = 0;
+
+  while (minesPlanted < MinesAmount) {
+    const rowSel = parseInt(Math.random() * rows, 10);
+    const columnSel = parseInt(Math.random() * columns, 10);
+
+    if (!board[rowSel][columnSel].mined) {
+      board[rowSel][columnSel].mined = true;
+      minesPlanted++;
+    }
+  }
+};
