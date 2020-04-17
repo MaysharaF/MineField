@@ -15,9 +15,9 @@ export default props => {
     styleField.push(styles.exploded);
   }
   if (flagged) {
-    styleField.push(styles.flagged, styles.regular);
+    styleField.push(styles.flagged);
   }
-  if (styleField.length === 1) {
+  if (!opened && !exploded) {
     styleField.push(styles.regular);
   }
 
