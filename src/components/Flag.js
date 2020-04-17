@@ -16,4 +16,11 @@ const styles = StyleSheet.create({
   container: {
     marginTop: 2,
   },
+  flagpole: {
+    position: 'absolute',
+    height: 14,
+    width: 2,
+    backgroundColor: '#222',
+    marginLeft: 9,
+  },
 });
