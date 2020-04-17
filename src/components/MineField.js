@@ -11,3 +11,10 @@ export default props => {
   });
   return <View style={StyleSheet.container}>{rows}</View>;
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    backgroundColor: '#EEE',
+  },
+});
