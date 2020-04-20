@@ -68,7 +68,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Header
-          invertFlag={this.minesAmount() - flagsUsed(this.state.board)}
+          flagsLeft={this.minesAmount() - flagsUsed(this.state.board)}
           onNewGame={() => this.setState(this.createState())}
         />
         <View style={styles.board}>
