@@ -9,7 +9,7 @@ export default props => {
         <TouchableOpacity onPress={props.onFlagPress} style={styles.flagButton}>
           <Flag bigger />
         </TouchableOpacity>
-        <Text style={styles.flagsLeft}>= {props.flagsLeft}</Text>
+        <Text style={styles.flagsLeft}> = {props.flagsLeft}</Text>
       </View>
       <TouchableOpacity style={styles.button} onPress={props.onNewGame}>
         <Text style={styles.buttonLabel}>Novo Jogo</Text>
