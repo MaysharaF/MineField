@@ -47,5 +47,21 @@ const cloneBoard = board => {
     });
   });
 };
+const getNeighbors = (board, row, column) => {
+  const neighbors = [];
+  const rows = [row - 1, row, row + 1];
+  const columns = [column - 1, column, column + 1];
+  rows.forEach(r => {
+    columns.forEach(c => {
+      const different = r !== row || c !== column;
+      const validRow = r >= 0 && r < board.length;
+      const validColumn = c >= 0 && c < board[0].length;
+      if (different && validRow && validColumn) {
+        neighbors.push(board[r][c]);
+      }
+    });
+  });
+  return neighbors;
+};
 
 export {createMinedBoard};
