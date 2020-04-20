@@ -33,6 +33,23 @@ export default class App extends Component {
     };
   };
 
+  onOpenField = (row, column) => {
+    const board = cloneBoard(this.state.board);
+    openField(board, row, column);
+    const lost = hadExplosion(board);
+    const won = wonGame(board);
+
+    if (lost) {
+      showMines(board);
+      Alert.alert('Perdeu!', 'Perdeu!');
+    }
+
+    if (won) {
+      Alert.alert('Parabéns', 'Você Venceu');
+    }
+    this.setState({board, lost, won});
+  };
+
   render() {
     return (
       <View style={styles.container}>
