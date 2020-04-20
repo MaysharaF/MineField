@@ -34,4 +34,10 @@ const styles = StyleSheet.create({
     marginTop: 10,
     minWidth: 30,
   },
+  flagsLeft: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    paddingTop: 5,
+    marginLeft: 20,
+  },
 });
