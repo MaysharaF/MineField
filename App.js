@@ -1,8 +1,15 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Alert} from 'react-native';
 import params from './src/params';
 import MineField from './src/components/MineField';
-import {createMinedBoard} from './src/functions';
+import {
+  createMinedBoard,
+  cloneBoard,
+  openField,
+  hadExplosion,
+  wonGame,
+  showMines,
+} from './src/functions';
 
 export default class App extends Component {
   constructor(props) {
@@ -21,6 +28,8 @@ export default class App extends Component {
     const rows = params.getRowsAmount();
     return {
       board: createMinedBoard(rows, cols, this.minesAmount()),
+      won: false,
+      lost: false,
     };
   };
 
