@@ -68,4 +68,21 @@ const safeNeighborhood = (board, row, column) => {
   const safes = (result, neighbor) => result && !neighbor.mined;
   return getNeighbors(board, row, column).reduce(safes, true);
 };
+
+const openField = (board, row, column) => {
+  const field = board[row][column];
+  if (!field.opened) {
+    field.opened = true;
+    if (field.mined) {
+      field.exploded = true;
+    } else if (safeNeighborhood(board, row, column)) {
+      getNeighbors(board, row, column).forEach(n =>
+        openField(board, n.row, n.column),
+      );
+    } else {
+      const neighbors = getNeighbors(board, row, column);
+      field.nearMines = neighbors.filter(n => n.mined).length;
+    }
+  }
+};
 export {createMinedBoard};
