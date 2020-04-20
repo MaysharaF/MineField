@@ -10,6 +10,7 @@ import {
   wonGame,
   showMines,
   invertFlag,
+  flagsUsed,
 } from './src/functions';
 
 export default class App extends Component {
