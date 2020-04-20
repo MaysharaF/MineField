@@ -92,5 +92,9 @@ const hadExplosion = board =>
 const pendding = field =>
   (field.mined && !field.flagged) || (!field.mined && !field.opened);
 const wonGame = board => fields(board).filter(pendding).length === 0;
+const showMines = board =>
+  fields(board)
+    .filter(field => field.mined)
+    .forEach(field => (field.opened = true));
 
 export {createMinedBoard};
