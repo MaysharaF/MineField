@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     marginTop: 12,
   },
   flagpoleBigger: {
-    height: 10,
+    height: 28,
     width: 4,
     marginLeft: 16,
   },
