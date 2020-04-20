@@ -30,4 +30,8 @@ const styles = StyleSheet.create({
   flagContainer: {
     flexDirection: 'row',
   },
+  flagButton: {
+    marginTop: 10,
+    minWidth: 30,
+  },
 });
