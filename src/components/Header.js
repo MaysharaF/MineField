@@ -44,4 +44,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#999',
     padding: 5,
   },
+  buttonLabel: {
+    fontSize: 20,
+    color: '#DDD',
+    fontWeight: 'bold',
+  },
 });
