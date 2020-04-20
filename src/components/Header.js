@@ -27,4 +27,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingHorizontal: 20,
   },
+  flagContainer: {
+    flexDirection: 'row',
+  },
 });
