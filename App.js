@@ -51,6 +51,17 @@ export default class App extends Component {
     this.setState({board, lost, won});
   };
 
+  onSelectField = (row, column) => {
+    const board = cloneBoard(this.state.board);
+    invertFlag(board, row, column);
+    const won = wonGame(board);
+
+    if (won) {
+      Alert.alert('Parabéns', 'Você Venceu');
+    }
+    this.setState({board, won});
+  };
+
   render() {
     return (
       <View style={styles.container}>
