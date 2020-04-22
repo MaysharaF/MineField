@@ -60,12 +60,11 @@ const styles = StyleSheet.create({
   },
   bgEasy: {
     backgroundColor: '#49b65d',
-  }
+  },
   bgNormal: {
     backgroundColor: '#2765F7',
   },
   bgHard: {
-    backgroundColor: '#F26347'
-  }
-
+    backgroundColor: '#F26347',
+  },
 });
