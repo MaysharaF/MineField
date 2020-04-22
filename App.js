@@ -33,6 +33,7 @@ export default class App extends Component {
       board: createMinedBoard(rows, cols, this.minesAmount()),
       won: false,
       lost: false,
+      showLevelSelection: false,
     };
   };
 
