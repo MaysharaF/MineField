@@ -39,4 +39,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'rgba(0,0,0,0.6)',
   },
+  container: {
+    backgroundColor: '#EEE',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 15,
+  },
 });
