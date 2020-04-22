@@ -45,4 +45,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 15,
   },
+  title: {
+    fontSize: 30,
+    fontWeight: 'bold',
+  },
+  button: {
+    marginTop: 10,
+    padding: 5,
+  },
 });
