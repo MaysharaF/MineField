@@ -53,4 +53,9 @@ const styles = StyleSheet.create({
     marginTop: 10,
     padding: 5,
   },
+  buttonLabel: {
+    fontSize: 20,
+    color: '#EEE',
+    fontWeight: 'bold',
+  },
 });
