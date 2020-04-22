@@ -31,3 +31,12 @@ export default props => {
     </Modal>
   );
 };
+
+const styles = StyleSheet.create({
+  frame: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(0,0,0,0.6)',
+  },
+});
