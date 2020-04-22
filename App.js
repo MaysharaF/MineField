@@ -44,7 +44,7 @@ export default class App extends Component {
 
     if (lost) {
       showMines(board);
-      Alert.alert('Perdeu!', 'Perdeu!');
+      Alert.alert('Perdeu!', 'Tente Novamente!');
     }
 
     if (won) {
