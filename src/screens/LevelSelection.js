@@ -58,4 +58,14 @@ const styles = StyleSheet.create({
     color: '#EEE',
     fontWeight: 'bold',
   },
+  bgEasy: {
+    backgroundColor: '#49b65d',
+  }
+  bgNormal: {
+    backgroundColor: '#2765F7',
+  },
+  bgHard: {
+    backgroundColor: '#F26347'
+  }
+
 });
